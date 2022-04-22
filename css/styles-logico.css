@@ -32,6 +32,7 @@
     --white30: white;
     --white20: #A5A3A5;
     --white10: #3A3539;
+    
 }
 
 body {
@@ -46,22 +47,24 @@ a {
 }
 
 .header {
-    position: sticky;
-    inset-block-start: -45px;
+    /* position: sticky; */
+    /* inset-block-start: -45px; */
 }
 
 .header-content {
-    position: relative;
-    inset-block-start: 65px;
+    padding-inline: 20px;
+    /* position: relative;
+    inset-block-start: 65px; */
 }
 
 header{
+    margin-block-start: 20px;
     font-size: 14px;
     color: var(--white30);
-    position: absolute;
-    inset-block-start: 0px;
-    inset-inline-start: -208px;
-    inline-size: 188px;
+    /* position: absolute; */
+    /* inset-block-start: 0px; */
+    /* inset-inline-start: -208px; */
+    /* inline-size: 188px; */
 }
 
 header li{
@@ -86,8 +89,10 @@ h1 h2 h3{
 }
 
 h1{
-    font-size: 60px;
-    margin-block-start: 64px;
+    /* font-size: 60px; */
+    font-size: 40px;
+    /* margin-block-start: 64px; */
+    margin-block-start: 20px;
     margin-block-end: 16px;
     /*font-size: 3.75em;*/
 }
@@ -136,7 +141,7 @@ blockquote p {
 
 .hero{
     background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-    height: 350px;
+    block-size: 50px;
 }
 
 .section-content img {
@@ -214,4 +219,56 @@ font-size: 0;
     block-size: 15px;
     background-color: white;
     border-radius: 50%;
+}
+
+.form input {
+    inline-size: 100%;
+    border: 1px solid var(--white30);
+    background: #251F24;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    color: var(--white30);
+    font-size: 16px;
+    margin-block-end: 24px;
+}
+
+form input[type="submit"]{
+    background: #157EFB;
+    border: none;
+}
+
+.form input::-webkit-input-placeholder {
+color: var(--white20);
+}
+
+
+@media screen and (min-width: 1366px) {
+    .hero {
+        block-size: 350px;
+    }
+    .header {
+        position: sticky;
+        inset-block-start: -45px;
+    }
+    
+    .header-content {
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0;
+    }
+    
+    header{
+        font-size: 14px;
+        color: var(--white30);
+        position: absolute;
+        inset-block-start: 0px;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
 }
