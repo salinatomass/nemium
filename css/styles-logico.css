@@ -27,6 +27,11 @@
 }
 
 
+html {
+     /* background: red; */
+     scroll-behavior: smooth;
+}
+
 :root{
     font-size: 18px;
     --white30: white;
@@ -39,7 +44,6 @@ body {
     color: var(--white30);
     font-family: "nunito", sans-serif;
     background: #251F24;
-    ;
 }
 
 a {
@@ -121,6 +125,26 @@ pre{
     border-radius: 8px;
 }
 
+pre::-webkit-scrollbar{
+    block-size: 10px;
+    /* background-color: red; */
+}
+
+pre::-webkit-scrollbar-thumb{
+    background: var(--white20);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar{
+    inline-size: 15px;
+    /* background-color: red; */
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--white20);
+    border-radius: 2px;
+}
+
 p {
     color: var(--white20);
 }
@@ -147,6 +171,14 @@ blockquote p {
 .section-content img {
     margin-block-start: 40px;
     display: block;
+    height: 100%;
+    /* width: 100%; */
+}
+
+.section-content-2 img{
+    /* display: block; */
+    /* height: 100%; */
+    width: 100%;
 }
 
 .section-content{
@@ -194,6 +226,7 @@ blockquote p {
     /*block-size: 100px;*/
 display: block;
 overflow: auto;
+overflow-x: hidden;
 scroll-behavior: smooth;
 white-space: nowrap;
 font-size: 0;
