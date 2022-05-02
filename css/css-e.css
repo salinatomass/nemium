@@ -43,7 +43,7 @@ html {
 body {
     color: var(--white30);
     font-family: "nunito", sans-serif;
-    background: #251F24;
+    background: #232946;
 }
 
 a {
@@ -120,7 +120,7 @@ hr {
 }
 
 pre{
-    background: var(--white10);
+    /* background: var(--white10); */
     padding: 40px;
     overflow: auto;
     border-radius: 8px;
@@ -153,7 +153,8 @@ p {
 blockquote {
     margin-block-start: 80px;
     margin-block-end: 63px;
-    background-color: var(--white10);
+    background: #D4939D;
+
     border-radius: 8px;
     line-height: 32px;
     font-size: 24px;
@@ -161,7 +162,7 @@ blockquote {
 }
 
 blockquote p {
-    color: var(--white30);
+    color: black;
 }
 
 .hero{
@@ -273,7 +274,9 @@ font-size: 0;
 }
 
 form input[type="submit"]{
-    background: #157EFB;
+    color: black;
+    background: #EEBBC3;
+
     border: none;
 }
 
@@ -312,7 +315,8 @@ color: var(--white20);
 }
 
 .footer{
-    background: var(--white30);
+    background: #EEBBC3;
+
   }
   
   .footer-content{
